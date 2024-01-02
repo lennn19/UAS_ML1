@@ -129,6 +129,7 @@ sns.catplot(kind='bar',x='type',y='calories',data=df)
 plt.title('Calories in Items')
 ```
 ![Alt text](3.png)
+
 sandwich mengandung calories paling tinggi
 
 ```bash
@@ -136,6 +137,7 @@ sns.catplot(kind='bar',x='type',y='fat',data=df)
 plt.title('Fats in Items')
 ```
 ![Alt text](4.png)
+
 disini bistro box mengandung fat paling banyak
 
 ```bash
@@ -143,6 +145,7 @@ sns.catplot(kind='bar',x='type',y='protein',data=df)
 plt.title('Protein in Items')
 ```
 ![Alt text](5.png)
+
 yang paling banyak menganduk protein ada di sandwich
 
 ```bash
@@ -150,6 +153,7 @@ sns.catplot(kind='bar',x='type',y='fiber',data=df)
 plt.title('Fibers in Items')
 ```
 ![Alt text](6.png)
+
 wow disini bisto box mengandung fiber paling tinggi di antara lainnya
 
 # Preprocessing
