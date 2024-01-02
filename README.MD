@@ -8,7 +8,7 @@
 
 ## Domain Proyek
 
-Web app ini mengelompokan data nutrition starbucks. Pengelompokan ini menggunakan algorithma K-Means Clustering
+Web app ini mengelompokan data nutrition starbucks. Pengelompokan ini menggunakan algoritma K-Means Clustering
 
 ## Business Understanding
 Web app ini digunakan untuk memahami nutrition makanan yang ada di starbucks, agar saat memilih makanan kita bisa menentukan cocok untuk dipilih atau tidak
@@ -53,6 +53,7 @@ Pertama kita mengupload data yang telah kita unduh dari kaggle
 Untuk data collection ini, saya mendapatkan dataset dari website kaggle
 
 # Import Dataset
+masukan token kaggle untuk dapat mengakses datasetnya
 ```bash
 from google.colab import files
 files.upload()
@@ -65,12 +66,11 @@ files.upload()
 !chmod 600 ~/.kaggle/kaggle.json
 !ls ~/.kaggle
 ```
+
 ```bash
 !kaggle datasets download -d utkarshx27/starbucks-nutrition
 ```
-# Extract File
-
-Extract file yang tadi di unduh lalu masukan kedalam folder
+extract file yang diunduh lalu masukan ke folder
 ```bash
 !mkdir starbucks-nutrition
 !unzip starbucks-nutrition.zip -d starbucks-nutrition
@@ -91,11 +91,11 @@ from sklearn.preprocessing import LabelEncoder
 ```bash
 df = pd.read_csv('/content/starbucks-nutrition/starbucks.csv')
 ```
-Ini adalah data - data kandungan nutrion starbuck
 
 ```bash
 df.head()
 ```
+disini adalah data - data kandungan nutrition starbuck
 
 ```bash
 df.describe()
@@ -104,11 +104,14 @@ df.describe()
 ```bash
 df.info()
 ```
+melihat info data
 
 ```bash
 df.isnull().sum()
 ```
+melihat apakah ada data yang bermasalah
 # EDA
+lanjut dengan meng-visualisasikan data yang nantinya akan melewati tahap preprocessing.
 
 ```bash
 sns.heatmap(df.isnull())
