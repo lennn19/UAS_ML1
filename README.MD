@@ -35,7 +35,7 @@ Dataset original yang saya gunakan berasal dari Kaggle yang berisi tentang Starb
 
 Selanjutnya menguraikan seluruh variabel atau fitur pada data
 
-### Variabel-variabel pada  adalah sebagai berikut:
+### Variabel-variabel pada starbucks nutrition adalah sebagai berikut:
 
 - Item                  :Menunjukan Nama item = object
 - Calories              :Menunjukan Jumlah Calories = int64
